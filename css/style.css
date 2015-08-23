@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #eaeaea;
+}
+
+.jumbotron {
+	min-height: 400px;
+	background: url('../img/comet.jpg') 0 -100px; no-repeat;
+	background-size: cover;
+	color: #ff0000;
+}
+
+#control-panel {
+	border: 2px solid #888;
+	border-radius: 10px;
+	padding: 0 30px 10px 30px;
+}
+
+#control-panel h2 {
+	padding: 0 7px;
+	background-color: #eaeaea;
+	position: relative;
+	text-align: center;
+	top: -17px;
+	margin: 0;
+	display: inline;
+	font-family: "Arial Narrow",Arial,sans-serif;
+}
+
+#control-panel input, #control-panel button,
+#control-panel .progress, #control-panel #guesses {
+	margin: 0 15px 20px 15px;
+	max-width: 250px;
+	display: block;
+}
+
+#control-panel #message  {
+ 	margin: 0 15px 20px 15px;
+	max-width: 400px;
+	display: block;
+ }
+
+#control-panel #message {
+	background-color: white;
+	border-radius: 4px;
+	font-size: 20px;
+	padding: 5px 10px;
+
+}
+
+.btn-primary {
+	background-color: #87b2f2;
+	border-color: #87b2f2;
+}
+
+.btn-success {
+	background-color: #5bc16c;
+	border-color: #5bc16c;
+}
+
+.btn-danger {
+	background-color: #ff0000;
+	border-color: #ff0000;
+}
+
+.progress-bar {
+	background-color: #87b2f2;
+}
+
+/* === Typography === */
+
+.jumbotron h1 {
+	font-weight: bold;
+}
+
+body {
+	font-family: Futura,"Trebuchet MS",Arial,sans-serif;
+	font-size: 16px;
+}
+
+/* === Media Queries === */
+
+@media (max-width: 767px) {
+
+	#control-panel {
+		width: 80%;
+	}
+
+	#control-panel input, #control-panel .btn, #control-panel #guesses,
+	#control-panel #message, #control-panel .progress {
+		margin: 0 auto 20px auto;
+	}
+
+	#control-panel #guesses, #control-panel #message {
+		margin-bottom: 30px;
+	}
+
+	#control-panel #message {
+		max-width: 400px;
+	}
+}
+
+
+

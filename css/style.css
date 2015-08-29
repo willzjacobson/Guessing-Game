@@ -9,7 +9,7 @@ body {
 
 .jumbotron {
 	min-height: 400px;
-	background: url('../img/comet.jpg') 0 -100px; no-repeat;
+	background: url('../img/comet.jpg') 0 -100px no-repeat;
 	background-size: cover;
 	color: #ff0000;
 }
@@ -49,12 +49,17 @@ body {
 	border-radius: 4px;
 	font-size: 20px;
 	padding: 5px 10px;
+	min-height: 70px;
+}
 
+#control-panel .message-head {
+	position: relative;
+	left: 15px;
 }
 
 .btn-primary {
-	background-color: #87b2f2;
-	border-color: #87b2f2;
+	background-color: #1b33e8;
+	border-color: #1b33e8;
 }
 
 .btn-success {
@@ -68,7 +73,8 @@ body {
 }
 
 .progress-bar {
-	background-color: #87b2f2;
+	background-image: none;
+	background-color: #1b33e8;
 }
 
 /* === Typography === */
@@ -80,6 +86,11 @@ body {
 body {
 	font-family: Futura,"Trebuchet MS",Arial,sans-serif;
 	font-size: 16px;
+}
+
+.lost {
+	text-align: right;
+	position: relative;
 }
 
 /* === Media Queries === */
@@ -101,6 +112,12 @@ body {
 
 	#control-panel #message {
 		max-width: 400px;
+	}
+}
+
+@media (min-width: 768px) {
+	.lost {
+		right: 140px;
 	}
 }
 

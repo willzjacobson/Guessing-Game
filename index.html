@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>??? Guessing Game ???</title>
+    <title>Guessing Game</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -28,28 +28,32 @@
       <h2>Control Panel</H2>
       <div class="row">
         <div class="col-md-6 col-sm-6">
-          <input type="text" class="form-control" placeholder="Guess here!">
-          <button type="button" class="btn btn-lg btn-primary"><i class="glyphicon glyphicon-plane"></i> Submit Your Guess!</button>
+          <input type="text" class="form-control guess" placeholder="Guess here!">
+          <button type="button" class="btn btn-lg btn-primary submit-guess"><i class="glyphicon glyphicon-plane"></i> Submit Your Guess!</button>
           <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" style="width: 1%;">
+            <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
             </div>
           </div><!-- .progress -->
           <div id="guesses">
-            <p>You have 5 guesses remaining</p>
+            <p>You have <span class="number-guesses">5</span> guesses remaining<span class="exclame"></span></p>
           </div><!-- #guesses-remaining -->
         </div><!-- .col-md-6 .col-sm-6 -->
+
         <div class="col-md-6 col-sm-6">
+          <p class="message-head">Message Board</p>
           <div id="message">
-            You are frigid. Higher. Much. Please
+
           </div><!-- .message -->
-          <button type="button" class="btn btn-lg btn-danger"><i class="glyphicon glyphicon-flash"></i> God, gimme a sign!</button>
-          <button type="button" class="btn btn-lg btn-success"><i class="glyphicon glyphicon-time"></i> Turn back the clock!</button>
+          <button type="button" class="btn btn-lg btn-danger hint"><i class="glyphicon glyphicon-flash"></i> God, gimme a sign!</button>
+          <button type="button" class="btn btn-lg btn-success again"><i class="glyphicon glyphicon-time"></i> Turn back the clock</button>
         </div><!-- .col-md-6 .col-sm-6 -->
       </div><!-- .row -->
     </div><!-- .container -->
 
     <!-- JS
     ================================================== -->
+    <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
